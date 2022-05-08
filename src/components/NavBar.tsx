@@ -20,7 +20,7 @@ const NavBar = () => {
 
           {/* @ts-ignore */}
           <StyledLink as={RouterLink} variant="nav" to="/">
-            React Query CRUD
+            Home - All Books
           </StyledLink>
           <Box mx="auto" />
           {/* @ts-ignore */}
