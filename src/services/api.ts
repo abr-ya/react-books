@@ -4,3 +4,15 @@ export const getAllBooks = async () => {
   
   return response.json();
 };
+
+export const removeBook = async (id: string) => {
+  const response = await fetch(
+    `${process.env.REACT_APP_API_SERVER}/books/${id}`,
+    { method: "DELETE" }
+  );
+
+  // response.json().message
+  if (!response.ok) throw new Error("Ошибка удаления книги!");
+
+  return true;
+};
