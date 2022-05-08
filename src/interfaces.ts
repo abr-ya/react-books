@@ -5,7 +5,7 @@ export interface IBook {
 }
 
 export interface IBookForm {
-  defaultValues: IBook;
+  defaultValues?: IBook;
   onFormSubmit: (data: IBook) => void;
   isLoading: boolean;
 }

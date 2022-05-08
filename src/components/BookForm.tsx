@@ -23,7 +23,7 @@ const BookForm = ({ defaultValues, onFormSubmit, isLoading }: IBookForm) => {
         <Label htmlFor="author">Author</Label>
         <Input ref={register} id="author" name="author" type="text" />
       </Box>
-      <Button variant="primary" mr={2}>
+      <Button variant="primary" mr={2} sx={{ cursor: "pointer"}} >
         { isLoading ? <Loader color="#fff" height={10} /> : "Submit" }
       </Button>
     </form>

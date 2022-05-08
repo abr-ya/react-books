@@ -45,3 +45,21 @@ export const updateBook = async ({ id, ...data }: any) => {
 
   return response.json();
 };
+
+export const createBook = async ({ ...data }) => {
+  const response = await fetch(
+    `${process.env.REACT_APP_API_SERVER}/books/`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
+
+  // response.json().message
+  if (!response.ok) throw new Error("Ошибка создания книги!");
+
+  return response.json();
+};

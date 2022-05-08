@@ -9,7 +9,7 @@ function Edit() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { data, isLoading, isError } = useQuery(["book", { id }], getBook); // error для блока
-  const { mutateAsync, isLoading: isMutating } = useMutation(updateBook)
+  const { mutateAsync, isLoading: isMutating } = useMutation(updateBook);
 
   const onFormSubmit = async (formData: {title: string, author: string}) => {
     await mutateAsync({...formData, id});
