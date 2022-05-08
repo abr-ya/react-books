@@ -6,7 +6,8 @@ import { ThemeProvider } from 'styled-components';
 // @ts-ignore
 import preset from '@rebass/preset';
 import { QueryClientProvider, QueryClient } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { ReactQueryDevtools } from 'react-query/devtools';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 const queryClient = new QueryClient();
 
