@@ -5,7 +5,7 @@ import {
   Image,
 } from "rebass/styled-components";
 import { Link as RouterLink } from 'react-router-dom'
-import { Container } from "./Container"
+import Container from "./Container"
 import logo from "../assets/logo.svg";
 
 const NavBar = () => {

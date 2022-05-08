@@ -1,5 +1,5 @@
 import { Flex } from "rebass/styled-components";
-import { Container } from "../components/Container";
+import Container from "../components/Container";
 import { useQuery } from "react-query";
 import { getAllBooks } from "../services/api";
 import Book from "../components/Book";

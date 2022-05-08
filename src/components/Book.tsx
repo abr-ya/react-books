@@ -23,7 +23,7 @@ function Book({ author, title, id }: IBook) {
         {title}
       </StyledLink>
       <Text>{author}</Text>
-      <Button onClick={removeHandler} ml="5" sx={{ cursor: "pointer"}} bg="orange">
+      <Button onClick={removeHandler} ml="5" sx={{ cursor: "pointer"}} variant="secondary">
         { isLoading ? <Loader color="#fff" height={10} /> : "Remove" }
       </Button>
     </Flex>

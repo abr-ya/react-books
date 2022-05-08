@@ -5,7 +5,7 @@ interface IContainer {
   children: ReactNode;
 }
 
-export const Container = ({ children }: IContainer) => {
+const Container = ({ children }: IContainer) => {
   return (
     <Box
       sx={{
@@ -18,3 +18,5 @@ export const Container = ({ children }: IContainer) => {
     </Box>
   );
 };
+
+export default Container;
